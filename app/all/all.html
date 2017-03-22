@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h2>Stem Agencies</h2>
+    <div class="full-list">
+      <ul class="list-group" ng-repeat="object in all track by $index">
+        <li class="list-group-item">{{object.Id}} <span class="pull-right"><a ng-href="#/detailed?id={{object.Id}}">Details</a></span></li>
+        <li class="list-group-item">{{object.Agency}}</li>
+        <li class="list-group-item">{{object.InvestmentName}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
